@@ -7,7 +7,8 @@ body {
 }
 header {
     background: #fff; border-bottom: 1px solid #ddd;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    z-index: 10;
 }
 .navbar-brand { color: #000 !important; font-weight: 600; font-size: 1.5rem; }
 .nav-link { color: #555 !important; font-weight: 500; }
@@ -36,7 +37,7 @@ h1, h2 { font-weight: 600; color: #000; }
     transition: color 0.3s;
 }
 .socials a:hover { color: #000; }
-img.fullwidth-banner { width: 100%; height: auto; margin-top: 1rem; }
+img.fullwidth-banner { width: 100%; height: auto; }
 
 .dark-toggle {
     background: none; border: none;

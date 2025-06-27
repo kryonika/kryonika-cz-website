@@ -28,3 +28,14 @@ toggle.addEventListener('click', () => {
     }
     updateIcon();
 });
+
+function loadFooterContent() {
+    fetch('footer.html')
+        .then(res => res.text())
+        .then(html => {
+            const container = document.getElementById('footer-content');
+            if (container) {
+                container.innerHTML = html;
+            }
+        });
+}
