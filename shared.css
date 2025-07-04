@@ -66,3 +66,44 @@ body.dark-mode .socials a { color: #aaa; }
 body.dark-mode .socials a:hover { color: #fff; }
 body.dark-mode .dark-toggle { color: #ccc; }
 body.dark-mode .dark-toggle:hover { color: #fff; }
+
+body.dark-mode .list-group-item {
+    background: #1e1e1e;
+    border: 1px solid #333;
+    color: #ddd;
+}
+
+body.dark-mode .list-group-item:hover {
+    background: #2a2a2a;
+}
+
+body.dark-mode .btn-outline-primary {
+    color: #66b0ff;
+    border-color: #66b0ff;
+}
+
+body.dark-mode .btn-outline-primary:hover {
+    background: #66b0ff;
+    color: #000;
+}
+
+body.dark-mode .btn-outline-secondary {
+    color: #aaa;
+    border-color: #aaa;
+}
+
+body.dark-mode .btn-outline-secondary:hover {
+    background: #aaa;
+    color: #000;
+}
+
+.list-group-item .btn {
+    min-width: 110px;
+    text-align: center;
+}
+
+.list-group-item i {
+    display: inline-block;
+    width: 1.5rem;
+    text-align: center;
+}
