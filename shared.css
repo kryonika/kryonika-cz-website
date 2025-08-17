@@ -158,3 +158,15 @@ body.dark-mode .article-content h3 a:hover {
   text-decoration: none;
 }
 body.dark-mode .article-date { color: #aaa; }
+.substack-icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.125em;
+
+    background-color: currentColor;
+    -webkit-mask: url("icons/substack.svg") no-repeat center;
+    -webkit-mask-size: contain;
+    mask: url("icons/substack.svg") no-repeat center;
+    mask-size: contain;
+}
