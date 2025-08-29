@@ -1,9 +1,9 @@
-const body = document.body;
+const html = document.documentElement;
 const toggle = document.getElementById('toggleDark');
 const darkIcon = document.getElementById('darkIcon');
 
 function updateIcon() {
-    if (body.classList.contains('dark-mode')) {
+    if (html.classList.contains('dark-mode')) {
         darkIcon.classList.remove('fa-moon');
         darkIcon.classList.add('fa-sun');
         darkIcon.title = 'Přepnout na světlý režim';
@@ -15,13 +15,13 @@ function updateIcon() {
 }
 
 if (localStorage.getItem('dark-mode') === 'enabled') {
-    body.classList.add('dark-mode');
+    html.classList.add('dark-mode');
 }
 updateIcon();
 
 toggle.addEventListener('click', () => {
-    body.classList.toggle('dark-mode');
-    if (body.classList.contains('dark-mode')) {
+    html.classList.toggle('dark-mode');
+    if (html.classList.contains('dark-mode')) {
         localStorage.setItem('dark-mode', 'enabled');
     } else {
         localStorage.setItem('dark-mode', 'disabled');
@@ -32,10 +32,10 @@ toggle.addEventListener('click', () => {
 function loadFooterContent() {
     fetch('footer.html')
         .then(res => res.text())
-        .then(html => {
+        .then(footerHtml => {
             const container = document.getElementById('footer-content');
             if (container) {
-                container.innerHTML = html;
+                container.innerHTML = footerHtml;
             }
         });
 }

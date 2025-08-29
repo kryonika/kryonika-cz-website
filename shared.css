@@ -47,13 +47,13 @@ header {
 }
 
 /* Hamburger menu visibility improvements for dark mode */
-body.dark-mode .navbar-toggler {
+html.dark-mode .navbar-toggler {
     border-color: #666;
 }
-body.dark-mode .navbar-toggler:focus {
+html.dark-mode .navbar-toggler:focus {
     box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
 }
-body.dark-mode .navbar-toggler-icon {
+html.dark-mode .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
@@ -83,53 +83,53 @@ img.fullwidth-banner { width: 100%; height: auto; }
 }
 .dark-toggle:hover { color: #000; }
 
-body.dark-mode {
+html.dark-mode body {
     background: #121212; color: #ddd;
 }
-body.dark-mode header {
+html.dark-mode header {
     background: #1e1e1e; border-bottom: 1px solid #333;
     box-shadow: 0 2px 6px rgba(0,0,0,0.5);
 }
-body.dark-mode .navbar-brand { color: #fff !important; }
-body.dark-mode .nav-link { color: #ccc !important; }
-body.dark-mode .nav-link:hover { color: #fff !important; }
-body.dark-mode h1, body.dark-mode h2 { color: #fff; }
-body.dark-mode .main-block {
+html.dark-mode .navbar-brand { color: #fff !important; }
+html.dark-mode .nav-link { color: #ccc !important; }
+html.dark-mode .nav-link:hover { color: #fff !important; }
+html.dark-mode h1, html.dark-mode h2 { color: #fff; }
+html.dark-mode .main-block {
     background: #1e1e1e; border: 1px solid #333;
     color: #ddd;
 }
-body.dark-mode .footer { background: #1e1e1e; color: #aaa; }
-body.dark-mode .socials a { color: #aaa; }
-body.dark-mode .socials a:hover { color: #fff; }
-body.dark-mode .dark-toggle { color: #ccc; }
-body.dark-mode .dark-toggle:hover { color: #fff; }
+html.dark-mode .footer { background: #1e1e1e; color: #aaa; }
+html.dark-mode .socials a { color: #aaa; }
+html.dark-mode .socials a:hover { color: #fff; }
+html.dark-mode .dark-toggle { color: #ccc; }
+html.dark-mode .dark-toggle:hover { color: #fff; }
 
-body.dark-mode .list-group-item {
+html.dark-mode .list-group-item {
     background: #1e1e1e;
     border: 1px solid #333;
     color: #ddd;
 }
 
-body.dark-mode .list-group-item:hover {
+html.dark-mode .list-group-item:hover {
     background: #2a2a2a;
 }
 
-body.dark-mode .btn-outline-primary {
+html.dark-mode .btn-outline-primary {
     color: #66b0ff;
     border-color: #66b0ff;
 }
 
-body.dark-mode .btn-outline-primary:hover {
+html.dark-mode .btn-outline-primary:hover {
     background: #66b0ff;
     color: #000;
 }
 
-body.dark-mode .btn-outline-secondary {
+html.dark-mode .btn-outline-secondary {
     color: #aaa;
     border-color: #aaa;
 }
 
-body.dark-mode .btn-outline-secondary:hover {
+html.dark-mode .btn-outline-secondary:hover {
     background: #aaa;
     color: #000;
 }
@@ -195,13 +195,13 @@ body.dark-mode .btn-outline-secondary:hover {
     margin-top: 0rem;
     margin-bottom: 0.1rem;
 }
-body.dark-mode .article-item { background: #121212; border-color: #333; }
-body.dark-mode .article-content h3 a { color: inherit; }
-body.dark-mode .article-content h3 a:hover {
+html.dark-mode .article-item { background: #121212; border-color: #333; }
+html.dark-mode .article-content h3 a { color: inherit; }
+html.dark-mode .article-content h3 a:hover {
   color: #fff;
   text-decoration: none;
 }
-body.dark-mode .article-date { color: #aaa; }
+html.dark-mode .article-date { color: #aaa; }
 .substack-icon {
     display: inline-block;
     width: 1em;
